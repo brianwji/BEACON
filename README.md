@@ -182,5 +182,5 @@ print(p)
 ```
 
 
-![png](/examples/run_example_files/run_example_6_0.png)
+![png](examples/run_example_files/run_example_6_0.png)
 
