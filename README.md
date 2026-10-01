@@ -18,8 +18,8 @@ library(BEACON)
 
 For installation from a private repository, users must have repository access and authenticate with GitHub.
 
-
-
+## BEACON example workflow
+Below is an example workflow for making sample assignments using BEACON on the data of Gaublomme et al.
 
 ```R
 #Dependencies
@@ -182,5 +182,5 @@ print(p)
 ```
 
 
-![png](run_example_files/run_example_6_0.png)
+![png](/examples/run_example_files/run_example_6_0.png)
 
