@@ -16,7 +16,6 @@ Once installed, load BEACON:
 library(BEACON)
 ```
 
-For installation from a private repository, users must have repository access and authenticate with GitHub.
 
 ## BEACON example workflow
 Below is an example workflow for making sample assignments using BEACON on the data of Gaublomme et al.
@@ -24,12 +23,12 @@ Below is an example workflow for making sample assignments using BEACON on the d
 ```R
 #Dependencies
 library(ggplot2)
-library(BEACON)
 ```
 
 
 ```R
 #Read in barcode count matrix from Gaublomme et al.
+setwd(".../examples/")
 data_barcodes <- read.csv("barcodes_gaublomme.csv",row.names = 1)
 data_barcodes <- as.matrix(data_barcodes)
 ```
