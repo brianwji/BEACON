@@ -15,9 +15,20 @@
 #### BEACON calls ####
 ######################
 
-beacon_calls <- function(data,params){
+beacon_calls <- function(data, params = list()) {
 
-  #Parameters
+  #Default parameters
+  defaults <- list(
+    sig_max = 3,
+    min_count = 2,
+    max_bf = 0.97,
+    max_iter = 30
+  )
+
+  #Merge user parameters with defaults
+  params <- utils::modifyList(defaults, params)
+
+  # Parameters
   sig_max <- params$sig_max
   min_count <- params$min_count
   max_bf <- params$max_bf
